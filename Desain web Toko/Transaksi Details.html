@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Halaman.css">
+    <title>Transaksi Details| Mahardika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="image/LogoSport.png" width="198px" height="220">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="Halaman.html">Halaman Utama</a></li>
+                    <li><a href="Transaksi.html">Products</a></li>
+                    <li><a href="Profil.html">Profil</a></li>
+                    <li><a href="">Transaksi</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="Belanja.html"><img src="image/cart.png" width="30px" height="30px"></a>
+            <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+
+<!-- Singgle Product Details -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="image/BajuRM.jpg" width="100%" id="ProductImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="image/BajuRM.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/RmAbu.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/RmBlack.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="image/RmHijau.png" width="100%" class="small-img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-2">
+                <p>Home / Jersey</p>
+                <h1>Home Real Madrid 23/24</h1>
+                <h4>Rp. 1.300.000</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                    <option>XXL</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Beli Sekarang</a>
+
+                <h3>Jenis Kain <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia recusandae libero corrupti exercitationem ut mollitia natus sapiente veniam incidunt nulla nisi nam laboriosam expedita animi sequi deserunt, quos cupiditate! Sunt?</p>
+            </div>
+        </div>
+    </div>
+
+<!-- Tittle -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Produk Terkait</h2>
+            <p>Lihat Lebih Lanjut</p>
+        </div>
+    </div>
+
+<!-- Product -->
+
+    <div class="small-container">
+        
+        <div class="row">
+            <div class="col-4">
+                <img src="image/Sarungtangan.png">
+                <h4>Sarung Tangan Bola</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>Rp. 1.250.000</p>
+            </div>
+            <div class="col-4">
+                <img src="image/Kneepad.png">
+                <h4>Kneepad Kaki</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rp. 400.000</p>
+            </div>
+            <div class="col-4">
+                <img src="image/Wristband.png">
+                <h4>Wristband Tangan</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rp. 800.000</p>
+            </div>
+            <div class="col-4">
+                <img src="image/Topi.png">
+                <h4>Topi Pelindung</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>Rp. 650.000</p>
+            </div>
+        </div>
+
+        
+
+<!-- js for menu toggle -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px"; 
+
+        function menutoggle(){
+            if (MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+    </script>
+
+
+<!-- Js untuk Product Kotak -->
+    <script>
+        var ProductImg = document.getElementById("ProductImg");
+        var SmallImg = document.getElementsByClassName("small-img");
+
+        SmallImg[0].onclick = function()
+            {
+                ProductImg.src = SmallImg[0].src;
+            }
+        SmallImg[1].onclick = function()
+            {
+                ProductImg.src = SmallImg[1].src;
+            }
+        SmallImg[2].onclick = function()
+            {
+                ProductImg.src = SmallImg[2].src;
+            }
+        SmallImg[3].onclick = function()
+            {
+                ProductImg.src = SmallImg[3].src;
+            }
+
+
+
+
+    </script>
+
+</body>
+</html>
